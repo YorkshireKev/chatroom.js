@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Barebones ChatRoom Experiment</title>
+<h1>chatroom.js</h1>
+<h2>A barebones chatroom using node.js and socket.io</h2>
+</head>
+<body>
+<div id="chatHistory">
+</div>
+<div>
+<input id="userName" type="text" name="username" value="" placeholder="Enter a UserName" />
+<input id="inputLine" type="text" name="chattext" onkeydown="if (event.keyCode == 13) sendChatText()" />
+<input type="button" name="send" value="Send" onclick="sendChatText()" />
+</div>
+<script src="/socket.io/socket.io.js"></script> <!-- socket.io server sends the client js automatically from this request path -->
+<script src="chatroom.js"></script>
+</body>
+</html>
