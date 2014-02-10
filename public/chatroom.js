@@ -11,6 +11,7 @@ var socket = io.connect();
 socket.on('chatmessage', function (data) {
   div = document.getElementById('chatHistory');
   div.innerHTML = div.innerHTML + '<br />' + data.user + ': ' + data.message;
+  window.scrollTo(0,document.body.scrollHeight);
 });
 
 function sendChatText(){
