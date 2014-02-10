@@ -1,0 +1,29 @@
+#inputBar {
+	bottom: 0;
+  left: 0;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #5F4D4D;
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5px;
+  }
+  
+body {
+ 	background-color: #CCBEBE;
+ 	margin-bottom: 50px;
+ 	}
+ 	
+#sendButton {
+ 	color: red;
+ 	}
+ 
+#userName {
+	width: 20%;
+	}
+	
+#inputLine {
+	width: 60%
+	}
