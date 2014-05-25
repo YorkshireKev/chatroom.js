@@ -29,7 +29,7 @@ io.sockets.on('connection', function (socket) {
   
   socket.on('chatmessage', function (data) {
   	io.sockets.emit('chatmessage', { user: data.user, message: data.message } );
-    console.log(data);
+    console.log(JSON.stringify(data));
   });
 });
 
